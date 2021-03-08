@@ -1,0 +1,475 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+
+}
+
+/* header section */
+.header-section {
+
+    border-bottom: 1px solid gray;
+    box-shadow: 40px -21px 21px 19px gray;
+
+}
+
+.header-section .logo {
+    float: left;
+    width: 30%;
+
+}
+
+.header-section .logo img {
+    height: 48px;
+
+}
+
+.header-section .menu {
+    float: right;
+    width: 70%;
+
+}
+
+.header-section .menu nav ul {
+    list-style: none;
+    padding: 7px 10px;
+    text-align: right;
+
+}
+
+.header-section .menu nav ul li {
+    display: inline-block;
+}
+
+.header-section .menu nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 174, 255);
+    font-size: 20px;
+    font-weight: 600px;
+    font-family: sans-serif;
+    padding: 10px 10px;
+    display: block;
+    transition: .5s;
+
+
+}
+
+.header-section .menu nav ul li a:hover {
+    background-color: rgb(194, 194, 194);
+    border-radius: 10px;
+}
+
+.header-section .menu nav ul li:first-child a {
+    color: rgb(0, 174, 255);
+    border-radius: 5px;
+    padding: 7px 10px;
+    background-color: rgb(194, 194, 194);
+}
+
+/* end header section */
+/* dropmenu */
+
+.header-section .menu ul li {
+    position: relative;
+}
+
+.header-section .menu ul li ul {
+    position: absolute;
+    ;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    /* top: 100px; */
+    left: 0px;
+    width: 200px;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+    border-top: 2px solid #ddd;
+
+
+
+}
+
+.header-section .menu ul li ul li {
+    display: block;
+    float: none;
+}
+
+.header-section .menu ul li ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 174, 255);
+    font-size: 20px;
+    font-weight: 600px;
+    font-family: sans-serif;
+    padding: 10px 10px;
+    display: block;
+    transition: .5s;
+    text-align: left;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.header-section .menu ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.header-section .menu ul li ul li:first-child a {
+    color: rgb(0, 162, 255);
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+}
+
+.header-section .menu nav ul li ul li:first-child a {
+    background-color: white;
+}
+
+.header-section .menu nav ul li ul li:hover:first-child a {
+    background-color: rgb(194, 194, 194);
+}
+
+/* end dropmenu */
+/* hero section */
+.hero-section {
+    background: url(../images/1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center bottom;
+    padding: 130px 0px;
+}
+
+.hero-section h1 {
+    font-size: 60px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.hero-section p {
+    font-weight: 700px;
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin-bottom: 66px;
+}
+
+.hero-section button {
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 800;
+    border: 2px solid rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding: 13px 19px;
+    background-color: rgb(29, 247, 0);
+
+}
+
+.hero-section button:hover {
+    background-color: cornflowerblue;
+    border: 2px solid red;
+}
+
+.hero-section button i {
+    margin-left: 10px;
+}
+
+/* end hero section */
+/* visit-section */
+.visit-section {
+    padding: 25px 0px;
+    border: 1px solid #ddd;
+}
+
+.visit-section .visit-text {
+    float: left;
+    width: 70%;
+}
+
+.visit-section .visit-text p {
+    font-size: 19px;
+    font-family: sans-serif;
+    line-height: 47px;
+}
+
+.visit-section .visit-button {
+    float: left;
+    width: 30%;
+
+
+}
+
+.visit-section .visit-button button {
+    font-size: 19px;
+    font-family: sans-serif;
+    background-color: rgb(0, 138, 252);
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.visit-section .visit-button button i {
+    color: rgb(255, 255, 255);
+}
+
+.visit-section .visit-image {
+    float: left;
+    width: 34%;
+    background-color: darkorange;
+}
+
+.visit-section .visit-image .visit-item {}
+
+/* end visit-section */
+/* service-section */
+.service-section {
+}   
+
+.service-section .service-item {
+    float: left;
+    width: 32%;
+    margin-right: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 70px;
+}
+
+
+.service-section .service-item:nth-child(3) {
+    margin-right: 0px;
+}
+
+.service-section .service-item:nth-child(6) {
+    margin-right: 0px;
+}
+
+.service-section .service-item span {}
+
+.service-section .service-item span i {
+    font-size: 45px;
+    color: deepskyblue;
+    margin-bottom: 15px;
+}
+
+.service-section .service-item h3 {
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+.service-section .service-item p {}
+
+/* end service-section */
+/* portfolio-section */
+.portfolio-section {
+    background-color: rgb(83, 83, 83);
+    float: left;
+    width: 100%;
+    padding: 85px 0px;
+    
+}
+
+.portfolio-section .p-head {
+     font-family: sans-serif;
+     color: floralwhite;
+}
+
+.portfolio-section .p-head h1 {
+   
+}
+
+.portfolio-section .p-head p {
+    
+}
+.portfolio-section .p-image{
+    float: left;
+    width: 25%;
+    padding:90px 0px 0px 0px;
+}
+.portfolio-section .p-image img{
+    height: 362px;
+    width: 322px;
+}
+
+/* end portfolio-section */
+/* design  */
+.design-section{
+    background-color:#f0f4f5;
+    float: left;
+    width: 100%;
+    padding: 35px 0px;
+        
+}
+.design-section .design{
+       
+}
+.design-section .design h4{
+    color: rgb(102, 102, 102);
+    font-size: 10px;
+}
+.design-section .design p{
+    color: rgb(102, 102, 102);
+    font-size: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+/* end design  */
+/* meet  */
+.meet-section{
+
+}
+.meet-section .meet{
+   float: left;
+   padding: 30px;
+   width: 100%;
+  
+}
+.meet-section .meet h3{
+    margin-bottom: 10px;
+}
+.meet-section .meet p{
+    color: #6e7176;
+    margin-bottom: 30px;
+
+}
+
+.meet-section .image{
+   float: left;
+padding: 10px;
+
+width: 30.3%;
+    
+    display: block;
+    z-index: -1;
+    position: relative;
+}
+.meet-section .image h4{
+    background-color: #fffcfc;
+    float: right;
+    width: 43%;
+    margin-top: -20px;
+    margin-left: 143px;
+    z-index: 1;
+    position: absolute;
+    font-size: 15px;
+    color: #888;
+
+}
+.meet-section .image h3{
+    margin-bottom: 15px;
+    color: #575757;
+}
+.meet-section .image p{
+    padding-right: 40px;
+    color: #6e7176;
+}
+.meet-section .image img{
+    height: 195px;
+    width: 260px;
+}
+/* end meet  */
+/* blog */
+.blog {
+    background: url(../images/7.jpg);
+    float: left;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+    background-position: center bottom;
+    background-size: cover;
+    margin-top: 60px;
+
+}
+
+.blog .blog-main {
+    float: left;
+    width: 33%; 
+    margin: 57px 0px 0px 0px; 
+     
+}
+
+
+.blog .blog-main .blog-img {
+    float: left;
+    width: 40%;
+   
+
+}
+
+.blog .blog-main .blog-img img {
+    border-radius: 52%;
+    border: 4px solid white;
+    width: 110px;
+    height: 102px;
+    
+}
+
+.blog .blog-main .title {
+    float: left; 
+    width: 60%;
+    margin-top: 20px;
+   
+
+}
+
+
+/* footer  */
+.footer{
+ 
+}
+.footer .footer-menu {
+    float: right;
+    width: 100%;
+    padding: 0px  0px 80px 0px;
+}
+
+
+.footer .footer-menu  nav ul {
+    padding: 104px 0px 30px;
+    list-style: none;
+ 
+}
+
+.footer .footer-menu  nav ul li {
+    display: inline-block;
+}
+
+.footer .footer-menu  nav ul li a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    display: block;
+    padding: 25px 45px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .5s;
+    text-transform: uppercase;
+    font-weight: 800px;
+}
+.footer .footer-menu p{
+    float: left;
+    width:100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom:0px 0px 50px;
+    color: rgb(90, 90, 90);
+
+}
+/* end footer  */
